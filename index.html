@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Início - Vision Câmeras de Segurança</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@r128/build/three.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><i class="fas fa-shield-alt"></i> Vision Segurança</h1>
+        <nav>
+            <ul>
+                <li><a href=""><i class="fas fa-home"></i> Início</a></li>
+                <li><a href=""><i class="fas fa-video"></i> Sistemas</a></li>
+                <li><a href=""><i class="fas fa-phone"></i> Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrapper"></div>
+
+        <h2>Câmeras de Segurança <span class="box-emoji">📹</span> <span class="security-badge">SISTEMAS
+                PROFISSIONAIS</span></h2>
+
+        <div class="products-catalogue">
+            <!-- Câmera Dome Hikvision -->
+            <div class="item">
+                <div class="image-container">
+                    <img src="dome_camera.jpg"
+                        alt="Câmera Dome Hikvision DS-2CD2143G0-I 4K" />
+                </div>
+                <h3>Câmera Dome Hikvision 4K</h3>
+                <p>Câmera de segurança profissional com resolução 4MP (2688x1520), visão noturna infravermelha até 30 metros e proteção IP67. Ideal para ambientes internos e externos.</p>
+
+                <div class="features">
+                    <span class="feature-tag">4MP Ultra HD</span>
+                    <span class="feature-tag">Visão Noturna 30m</span>
+                    <span class="feature-tag">IP67</span>
+                </div>
+
+                <div class="specs">
+                    <li>Modelo: Hikvision DS-2CD2143G0-I</li>
+                    <li>Resolução: 2688x1520 pixels (4MP)</li>
+                    <li>Ângulo: 110° horizontal</li>
+                    <li>Lente: 4mm fixa</li>
+                    <li>Armazenamento: Suporta SD Card até 256GB</li>
+                </div>
+
+                <p class="price">R$ 449,90</p>
+                <button id="adcn camera-1" class="camera-1"><i class="fas fa-shopping-cart"></i> Ver detahes</button>
+            </div>
+
+            <!-- Câmera Bullet Intelbras -->
+            <div class="item">
+                <div class="image-container">
+                    <img src="bullet_camera.webp"
+                        alt="Câmera Bullet Intelbras VHL 1120 B G2" />
+                </div>
+                <h3>Câmera Bullet Intelbras Full HD</h3>
+                <p>Câmera bullet externa com resolução Full HD, visão noturna infravermelha de 20 metros e proteção IP66. Perfeita para monitoramento de áreas externas.</p>
+
+                <div class="features">
+                    <span class="feature-tag">Full HD 1080p</span>
+                    <span class="feature-tag">Visão Noturna 20m</span>
+                    <span class="feature-tag">IP66</span>
+                </div>
+
+                <div class="specs">
+                    <li>Modelo: Intelbras VHL 1120 B G2</li>
+                    <li>Resolução: 1920x1080 pixels (2MP)</li>
+                    <li>Ângulo: 69° horizontal</li>
+                    <li>Lente: 2.8mm fixa</li>
+                    <li>Resistência: IP66 (à prova de água e poeira)</li>
+                </div>
+
+                <p class="price">R$ 289,90</p>
+                <button id="adcn"><i class="fas fa-shopping-cart"></i> Ver detahes</button>
+            </div>
+
+            <!-- Câmera PTZ Pelco -->
+            <div class="item">
+                <div class="image-container">
+                    <img src="ptz_camera.jpg"
+                        alt="Câmera PTZ Pelco Spectra Professional IR 4K" />
+                </div>
+                <h3>Câmera PTZ Pelco 4K Profissional</h3>
+                <p>Câmera PTZ (Pan-Tilt-Zoom) externa com zoom ótico 20x, acompanhamento automático de movimento e áudio bidirecional. Ideal para áreas externas de grande cobertura.</p>
+
+                <div class="features">
+                    <span class="feature-tag">Zoom 20x Ótico</span>
+                    <span class="feature-tag">Acompanhamento</span>
+                    <span class="feature-tag">Áudio 2 vias</span>
+                </div>
+
+                <div class="specs">
+                    <li>Modelo: Pelco Spectra Professional IR 2</li>
+                    <li>Resolução: 4K (8MP)</li>
+                    <li>Zoom: Ótico 20x + Digital 12x</li>
+                    <li>Resistência: IP68</li>
+                    <li>Alcance IR: 50 metros</li>
+                </div>
+
+                <p class="price">R$ 1.299,90</p>
+                <button id="adcn"><i class="fas fa-shopping-cart"></i> Ver detahes</button>
+            </div>
+        </div>
+    </main>
+    <div class="info-window-pdg-blur">
+        <div class="info-window">
+            <h3 class="camera-name"></h3>
+            <div class="camera-container">
+                <img src="" alt="Câmera Dome Hikvision DS-2CD2143G0-I 4K" class="infoWindowCameraImg">
+            </div>
+            <div class="info-container">
+                <p class="info-p"></p>
+                <div class="threeD-container">
+                    <h3>Veja o modelo dessa câmera em 3D</h3>
+                    <p>Use o mouse ou o dedo para rotacionar, dar zoom etc.</p>
+                    <model-viewer src="" auto-rotate-delay="200" class="md-3d"></model-viewer>
+                </div>
+                <button id="add"> <i class="fas fa-shopping-cart"></i>Adicionar ao carrinho</button>
+                <button id="close">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
