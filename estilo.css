@@ -361,6 +361,8 @@ button:active {
     width: 100%;
     max-width: 450px;
     height: 450px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #333
 }
 
 .camera-container {
