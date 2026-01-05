@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     camera1Btn.addEventListener('click', () => {
         h3Camera.innerText = 'Jortan JT-8162';
         infoP.innerText = 'A Câmera de Segurança Jortan JT-8163 é uma solução robusta e versátil para quem busca monitoramento inteligente de alta definição. Ideal para ambientes externos e internos, ela combina tecnologia avançada de rastreamento com facilidade de instalação via Wi-Fi';
-        cameraImg.src = 'novo-01/jortan-jt-8162.webp';
+        cameraImg.src = '/novo-01/jortan-jt-8162.webp';
         modelCamera.setAttribute('camera-controls', '');
         modelCamera.setAttribute('auto-rotate', '');
         modelCamera.src = '/novo-01/jortan-jt-8162.glb';
@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     camera2Btn.addEventListener('click', () => {
         h3Camera.innerText = 'Câmera PTZ';
         infoP.innerText = 'Câmera bullet externa com resolução Full HD, visão noturna infravermelha e proteção IP66. Perfeita para monitoramento de áreas externas.';
-        cameraImg.src = 'novo-01/dome.webp';
+        cameraImg.src = '/novo-01/dome.webp';
         modelCamera.setAttribute('camera-controls', '');
         modelCamera.setAttribute('auto-rotate', '');
-        modelCamera.src = 'novo-01/dome.glb';
+        modelCamera.src = '/novo-01/dome.glb';
         modelCamera.style.background = 'rgba(0, 0, 0, 0.5)';
         infoWindow.style.animation = 'show 0.3s ease-in-out forwards';
     });
@@ -38,10 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
     camera3Btn.addEventListener('click', () => {
         h3Camera.innerText = 'Câmera Life Play Tech';
         infoP.innerText = 'Câmera IP Wi-fi em formato de lâmapda, com resolução Full HD de 108px e visão noturna.';
-        cameraImg.src = 'novo-01/life-play-tech-lp-8177.webp';
+        cameraImg.src = '/novo-01/life-play-tech-lp-8177.webp';
         modelCamera.setAttribute('camera-controls', '');
         modelCamera.setAttribute('auto-rotate', '');
-        modelCamera.src = 'novo-01/life-play-tech-lp-8177.glb';
+        modelCamera.src = '/novo-01/life-play-tech-lp-8177.glb';
         modelCamera.style.background = 'rgba(0, 0, 0, 0.5)';
         infoWindow.style.animation = 'show 0.3s ease-in-out forwards';
     });
