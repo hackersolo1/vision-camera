@@ -1,15 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const adcnBtn = document.querySelector('#adcn');
+    const inputSearch = document.querySelector('#searchInput');
+    const itens = document.querySelectorAll('.products-catalogue .item');
+    const notFoundText = document.querySelector('.notFound');
     const camera1Btn = document.querySelector('.camera-1');
     const camera2Btn = document.querySelector('.camera-2');
     const camera3Btn = document.querySelector('.camera-3');
     const infoWindow = document.querySelector('.info-window-pdg-blur');
     const h3Camera = document.querySelector('.camera-name');
     const cameraImg = document.querySelector('.infoWindowCameraImg');
-    const cameraContainer = document.querySelector('.camera-container');
     const infoP = document.querySelector('.info-p');
     const modelCamera = document.querySelector('.md-3d');
     const closeBtn = document.querySelector('#close');
+
+
+    inputSearch.addEventListener('input', () => {
+        const inputValue = inputSearch.value.toLowerCase();
+
+        itens.forEach(item => {
+            if(item.textContent.toLowerCase().includes(inputValue)) {
+                notFoundText.style.display = 'none';
+                item.style.display = 'inline-block';
+            } else {
+                item.style.display = 'none';
+                notFoundText.style.display = 'block';
+            }
+        });
+    });
 
 
     camera1Btn.addEventListener('click', () => {
@@ -18,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cameraImg.src = 'novo-01/jortan-jt-8162.webp';
         modelCamera.setAttribute('camera-controls', '');
         modelCamera.setAttribute('auto-rotate', '');
-        modelCamera.src = 'novo-01/jortan-jt-8162.glb';
+        modelCamera.src = '/novo-01/jortan-jt-8162.glb';
         infoWindow.style.animation = 'show 0.3s ease-in-out forwards';
     });
 
@@ -50,8 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
         infoWindow.style.animation = 'unshow 0.3s ease-in-out forwards';
         h3Camera.innerText = '';
         infoP.innerText = '';
-        cameraImg.src = '';
-        modelCamera.src = '';
+        cameraImg.src = 'none';
+        modelCamera.src = 'none';
         modelCamera.style.background = 'none'
         modelCamera.removeAttribute('camera-controls');
     });
